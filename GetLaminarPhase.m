@@ -58,7 +58,7 @@ for seg = 1:NSeg %For each segment
         
         for j = 1:NChan %For each spike channel
             if ~isempty(spikeTimes{chanMap(j)}) %No spikes? No phase.
-                theseSpikes = round(spikeTimes{chanMap(j)}./30);
+                theseSpikes = spikeTimes{chanMap(j)};
                 % Get rid of the spikes not in this segment
                 theseSpikes = theseSpikes - min(thisSeg)+1;
                 theseSpikes(theseSpikes < 1) = [];
