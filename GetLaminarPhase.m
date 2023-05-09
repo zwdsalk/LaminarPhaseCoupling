@@ -16,8 +16,8 @@ function [LaminarData] = GetLaminarPhase(spikeTimes,LFP,chanMap,Fs,filtBand,GP)
 % resultants, and mean phase angles of the spike-LFP relationship on each
 % channel.
 % Example data
-% exData1.mat = Spark Recording, ExData2.mat = Flame Recording
-% Load and run LaminarData = GetLaminarPhase(mySpikes,LFP,chanMap,1000,[5 50],0);
+% exData1.mat = Marmoset Recording, exData2.mat = Macaque Recording, exData3.mat = Macaque Recording
+% Load and run LaminarData = GetLaminarPhase(spikeTimes,LFP,chanMap,1000,[5 50],0);
 %  10/21/2022 -ZD
 
 
